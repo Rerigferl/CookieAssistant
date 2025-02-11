@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: |
           mkdir deploy
-          mv index.js deploy/CookieAssistant.js
+          mv main.js deploy/CookieAssistant.js
       - uses: actions/configure-pages@v5.0.0
       - uses: actions/upload-pages-artifact@v3.0.1
         with:
