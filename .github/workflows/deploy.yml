@@ -2,7 +2,10 @@ name: "Deploy"
 
 on: 
   workflow_dispatch:
-
+  push:
+    paths:
+      - 'main.js'
+    
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
